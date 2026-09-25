@@ -4,12 +4,16 @@
 
 ## 起動方法
 
-`index.html` をブラウザで開いてください。ビルド、インストール、サーバー、アカウント、外部通信は不要です。
+公開版は [GitHub Pagesで遊ぶ](https://tetoriapot.github.io/sanmoku-lab/) から起動できます。
+
+ローカルでは `index.html` をブラウザで開いてください。ビルド、インストール、サーバー、アカウント、外部通信は不要です。
 
 - HTML / CSS / Vanilla JavaScript のみ
 - npm依存なし
 - 外部API・データベースなし
 - `file://` 起動と互換性を持つclassic script方式（ES Modules、`fetch`不使用）
+
+GitHub Pagesは `main` ブランチのルートを公開します。`main` へのpushで公開版も更新されます。`.nojekyll` により、HTML・CSS・JavaScriptを静的ファイルとして配信します。
 
 ## 実装済み機能
 
