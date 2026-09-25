@@ -1,0 +1,19 @@
+# Local credentials and machine-specific files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+
+# Local dependencies and development output
+node_modules/
+coverage/
+*.log
+.vscode/
+.idea/
+
+# Local agent configuration
+.codex/
+.agents/

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="三目並べのルールを組み替えて遊ぶ、ローカル完結の抽象戦略ゲーム研究所。"
+    >
+    <meta name="theme-color" content="#151713">
+    <title>SANMOKU / LAB</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <button class="brand" type="button" data-nav="home" aria-label="ホームへ移動">
+          <span class="brand-mark" aria-hidden="true">3</span>
+          <span class="brand-copy">
+            <strong>SANMOKU</strong>
+            <small>/ RULE SYSTEMS LAB</small>
+          </span>
+        </button>
+
+        <nav class="main-nav" aria-label="メインメニュー">
+          <button type="button" data-nav="play">PLAY</button>
+          <button type="button" data-nav="lab">RULE LAB</button>
+          <button type="button" data-nav="book">RULE BOOK</button>
+        </nav>
+
+        <div class="build-stamp">
+          <span>LOCAL</span>
+          <strong>PH. 01—04 / 06</strong>
+        </div>
+      </header>
+
+      <main id="app" class="app-root" tabindex="-1"></main>
+
+      <footer class="site-footer">
+        <span>SANMOKU / LAB</span>
+        <span>FINITE · DETERMINISTIC · PERFECT INFORMATION</span>
+        <span>BUILD 0.2</span>
+      </footer>
+    </div>
+
+    <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <noscript>
+      <p class="noscript-message">このゲームを遊ぶにはJavaScriptを有効にしてください。</p>
+    </noscript>
+
+    <script defer src="./js/namespace.js"></script>
+    <script defer src="./js/board.js"></script>
+    <script defer src="./js/ruleRegistry.js"></script>
+    <script defer src="./js/rules/vanish.js"></script>
+    <script defer src="./js/rules/move.js"></script>
+    <script defer src="./js/rules/gravity.js"></script>
+    <script defer src="./js/rules/forbiddenNeighbor.js"></script>
+    <script defer src="./js/rules/capture.js"></script>
+    <script defer src="./js/rules/flip.js"></script>
+    <script defer src="./js/rules/misere.js"></script>
+    <script defer src="./js/rules/king.js"></script>
+    <script defer src="./js/rules/doubleLine.js"></script>
+    <script defer src="./js/rules/noCenter.js"></script>
+    <script defer src="./js/ruleEngine.js"></script>
+    <script defer src="./js/game.js"></script>
+    <script defer src="./js/minimax.js"></script>
+    <script defer src="./js/boundedMinimax.js"></script>
+    <script defer src="./js/ui.js"></script>
+    <script defer src="./js/app.js"></script>
+  </body>
+</html>
